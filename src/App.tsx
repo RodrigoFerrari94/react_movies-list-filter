@@ -11,8 +11,8 @@ interface Props {
 }
 
 const filterMovies = (movies: Movie[], query: string): Movie[] => {
-  if (query.trim()) {
-    const preparedQuery = query.toLowerCase().trim();
+  const preparedQuery = query.toLowerCase().trim();
+  if (preparedQuery) {
     const filteredMovies = movies.filter(movie => {
       return (
         movie.title.toLowerCase().includes(preparedQuery) ||

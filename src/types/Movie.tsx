@@ -1,6 +1,6 @@
 export type Movie = {
-  title: String;
-  description: String;
+  title: string;
+  description: string;
   imgUrl: string;
   imdbUrl: string;
   imdbId: string;
